@@ -2,6 +2,7 @@ package com.quochung.sudungthuoc;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d("MainActivity", "Create view");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mywebView = findViewById(R.id.webview);
@@ -50,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
         public void onPageFinished(WebView view, String url) {
             progressDialog.setVisibility(View.GONE);
             mywebView.setVisibility(View.VISIBLE);
+
+
+
+
 
         }
     }

@@ -12,11 +12,6 @@
         android:roundIcon="@mipmap/launchericon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sudungthuoc">
-        <activity
-            android:name=".NoConnection"
-            android:exported="true"
-            android:label="@string/title_activity_no_connection"
-            android:theme="@style/Theme.Sudungthuoc.NoActionBar" />
         <activity android:name=".Logo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
