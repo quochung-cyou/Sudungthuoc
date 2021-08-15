@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.quochung.sudungthuoc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/launchericon"
+        android:label="Dùng Thuốc"
+        android:roundIcon="@mipmap/launchericon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sudungthuoc">
+        <activity
+            android:name=".NoConnection"
+            android:exported="true"
+            android:label="@string/title_activity_no_connection"
+            android:theme="@style/Theme.Sudungthuoc.NoActionBar" />
+        <activity android:name=".Logo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>
